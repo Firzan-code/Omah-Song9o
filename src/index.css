@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  /* Colors */
+  --clr-background: #ffffff;
+  --clr-surface: #f5f5f4;
+  --clr-primary: #b87333; /* Copper */
+  --clr-text-main: #1a1a1a;
+  --clr-text-secondary: #8d8d8d;
+  --clr-outline: #8d8d8d;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Hanken Grotesk', sans-serif;
+
+  /* Spacing */
+  --max-width: 1280px;
+  --gutter: 24px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-background);
+  color: var(--clr-text-main);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Typography Classes */
+.display-lg {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--clr-text-main);
+}
+
+.headline-md {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.headline-sm {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.title-lg {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.title-md {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.body-lg {
+  font-size: 1.125rem;
+}
+
+.body-md {
+  font-size: 1rem;
+}
+
+.label-caps {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--clr-text-secondary);
+}
+
+.text-secondary {
+  color: var(--clr-text-secondary);
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #a0632a;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--clr-text-main);
+  border: 1px solid var(--clr-outline);
+}
+
+.btn-secondary:hover {
+  background-color: var(--clr-surface);
+}
+
+/* Navbar */
+.navbar {
+  padding: 24px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.navbar.transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  backdrop-filter: none;
+}
+
+/* Override text color to white when transparent over hero video */
+.navbar.transparent .logo,
+.navbar.transparent .nav-links a {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Ensure readability */
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid var(--clr-surface);
+  backdrop-filter: blur(8px);
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr-primary);
+  transition: color 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--clr-text-secondary);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--clr-primary) !important;
+}
+
+/* Dynamic Hero Section */
+.hero-state-full, .hero-state-scrolled {
+  width: 100%;
+  overflow: hidden; 
+}
+
+/* FULLSCREEN STATE */
+.hero-state-full {
+  position: relative;
+  min-height: 100vh; /* Changed to full 100vh */
+  display: flex;
+  align-items: center;
+}
+
+.hero-state-full .hero-bg-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-surface);
+  z-index: 1;
+}
+
+.hero-state-full .hero-text-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-state-full .hero-text-box {
+  background: rgba(30, 35, 38, 0.9);
+  padding: 64px 48px;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+.hero-state-full .dyn-title { color: #ffffff; }
+.hero-state-full .dyn-desc { color: rgba(255, 255, 255, 0.7); }
+.hero-state-full .dyn-btn { background-color: #ffffff; color: #1a1a1a; }
+
+/* SCROLLED STATE */
+.hero-state-scrolled {
+  position: relative;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.hero-state-scrolled .hero-text-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-state-scrolled .hero-text-box {
+  background: transparent;
+  padding: 0;
+  max-width: 800px;
+}
+
+.hero-state-scrolled .hero-bg-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: calc(100% - var(--gutter) * 2);
+  height: 600px;
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-outline);
+}
+
+.hero-state-scrolled .dyn-title { color: var(--clr-text-main); }
+.hero-state-scrolled .dyn-desc { color: var(--clr-text-secondary); }
+.hero-state-scrolled .dyn-btn { background-color: var(--clr-primary); color: #ffffff; }
+
+/* Transition properties */
+.hero-text-box, .dyn-title, .dyn-desc, .dyn-btn {
+  transition: background-color 0.8s ease, color 0.8s ease, padding 0.8s ease;
+}
+
+/* Video Background */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video scales perfectly without stretching */
+  z-index: 0;
+}
+
+/* Placeholder cross lines */
+.placeholder-lines::before,
+.placeholder-lines::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid var(--clr-outline);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.placeholder-lines::before {
+  background: linear-gradient(to bottom right, transparent 49.8%, var(--clr-outline) 49.8%, var(--clr-outline) 50.2%, transparent 50.2%);
+}
+
+.placeholder-lines::after {
+  background: linear-gradient(to top right, transparent 49.8%, var(--clr-outline) 49.8%, var(--clr-outline) 50.2%, transparent 50.2%);
+}
+
+/* Villas Section - Horizontal Scroll */
+.horizontal-scroll-section {
+  padding: 120px 0;
+  background-color: #faf9f9;
+  border-top: 1px solid var(--clr-outline);
+  overflow: hidden;
+}
+
+.scroll-container-wrapper {
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+.scroll-sidebar {
+  flex: 0 0 350px;
+  position: sticky;
+  top: 120px;
+}
+
+.horizontal-villa-list {
+  display: flex;
+  gap: 32px;
+  overflow-x: auto;
+  padding-bottom: 40px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-primary) var(--clr-surface);
+  /* Expand the right side so scroll reaches the edge cleanly */
+  width: 100%;
+}
+
+.horizontal-card {
+  flex: 0 0 350px;
+  scroll-snap-align: start;
+}
+
+/* Base Villas Section for fallback */
+.villas-section {
+  padding: 120px 0;
+  background-color: #faf9f9;
+  border-top: 1px solid var(--clr-outline);
+}
+
+.section-header {
+  margin-bottom: 64px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section-header.center {
+  margin: 0 auto 64px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.villa-card {
+  background-color: var(--clr-background);
+  border: 1px solid var(--clr-outline);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.villa-card .villa-image-placeholder {
+  width: 100%;
+  height: 250px;
+  background-color: var(--clr-surface);
+  border-bottom: 1px solid var(--clr-outline);
+  position: relative;
+  overflow: hidden;
+}
+
+.villa-info {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.villa-info .btn {
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+/* Amenities */
+.amenities-section {
+  padding: 120px 0;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.amenity-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border: 1px solid var(--clr-outline);
+  background-color: var(--clr-surface);
+  transition: background-color 0.3s;
+}
+
+.amenity-card:hover {
+  background-color: var(--clr-background);
+}
+
+.icon-wrapper {
+  color: var(--clr-primary);
+  margin-bottom: 8px;
+}
+
+/* Cara Pesan (Order Steps) */
+.order-steps-section {
+  padding: 120px 0;
+  background-color: #faf9f9;
+  border-top: 1px solid var(--clr-outline);
+}
+
+.order-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* The connecting line */
+.order-timeline::before {
+  content: '';
+  position: absolute;
+  top: 40px; /* center of the 80px circles */
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background-color: var(--clr-outline);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.step-item {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  padding: 0 16px;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #faf9f9; /* match section bg to mask line */
+  border: 1px solid var(--clr-outline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--clr-primary);
+}
+
+.step-content {
+  max-width: 250px;
+}
+
+.step-title {
+  color: var(--clr-text-main);
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .order-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  
+  .order-timeline::before {
+    display: none; /* Hide line on mobile */
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 80px 0 40px 0;
+  background-color: var(--clr-surface);
+  border-top: 1px solid var(--clr-outline);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 64px;
+}
+
+.footer-brand {
+  max-width: 400px;
+}
+
+.footer-brand .logo {
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-links-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: transparent;
+  border: 1px solid var(--clr-outline);
+  color: var(--clr-text-secondary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border-radius: 0;
+}
+
+.social-card:hover {
+  background-color: var(--clr-primary);
+  border-color: var(--clr-primary);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 1px solid var(--clr-outline);
+}
+
+/* Villa Detail Page */
+.villa-detail-page {
+  padding-top: 100px; /* Offset for fixed navbar */
+  padding-bottom: 80px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--clr-primary);
+}
+
+.detail-hero-image {
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-outline);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.detail-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.detail-price-box {
+  text-align: right;
+}
+
+.detail-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin-bottom: 80px;
+}
+
+.detail-section-block {
+  margin-bottom: 48px;
+}
+
+.detail-section-label {
+  display: block;
+  margin-bottom: 24px;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: var(--clr-text-secondary);
+  border-bottom: 1px solid var(--clr-surface);
+  padding-bottom: 8px;
+}
+
+.gallery-row-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-square {
+  aspect-ratio: 1;
+  background-color: var(--clr-surface);
+  border: 1px solid var(--clr-outline);
+  position: relative;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.facility-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.facility-icon-box {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--clr-outline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: var(--clr-text-secondary);
+}
+
+.secure-experience-section {
+  background-color: #faf9f9;
+  border: 1px solid var(--clr-outline);
+  padding: 64px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-large {
+  padding: 18px 36px;
+  font-size: 1rem;
+}
+
+.btn-whatsapp {
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .hero-state-scrolled, .villas-section, .amenities-section {
+    padding: 80px 0;
+  }
+  
+  .detail-hero-image, .hero-state-scrolled .hero-bg-wrapper {
+    height: 400px;
+  }
+  
+  .hero-state-full .hero-text-box {
+    padding: 32px 24px;
+    margin: 24px;
+  }
+
+  /* Horizontal scroll section mobile overrides */
+  .scroll-container-wrapper {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .scroll-sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
+  }
+
+  .horizontal-villa-list {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0 var(--gutter) 24px var(--gutter);
+  }
+  
+  .horizontal-card {
+    flex: 0 0 300px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .order-timeline {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+  }
+  
+  .order-timeline::before {
+    display: none;
+  }
+
+  .detail-two-column {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .detail-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .detail-price-box {
+    text-align: left;
+  }
+
+  .gallery-row-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
