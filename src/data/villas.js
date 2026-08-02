@@ -2,7 +2,7 @@ export const villas = [
   {
     id: 'kav-c8',
     name: 'KAV C-8',
-    image: '../../assets/image/Villa/1.KAV_C8/ganti-dengan-gambar-c8.jpg',
+    image: '/1.KAV_C8/ganti-dengan-gambar-c8.jpg',
     desc: 'Villa pilihan cerdas dengan desain esensial dan kenyamanan optimal untuk keluarga kecil.',
     price: 'Rp 2.500.000 / Night',
     architecturalNotes: 'A masterclass in smart space utilization. KAV C-8 integrates essential living spaces with open-air voids, allowing the sea breeze to circulate freely. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
@@ -22,7 +22,29 @@ export const villas = [
       pool: 'Private Pool',
       landSize: '150 sqm',
       buildingSize: '120 sqm'
-    }
+    },
+    gallery: [
+      '/images/gallery/kav-c8/ViewRuangTamu.jpeg',
+      '/images/gallery/kav-c8/ViewRuangMakanSantai.jpeg',
+      '/images/gallery/kav-c8/Halaman1.jpeg',
+      '/images/gallery/kav-c8/KamarTidur1.jpeg',
+      '/images/gallery/kav-c8/KamarTidur2.jpeg',
+      '/images/gallery/kav-c8/RuangTamu1.jpeg',
+      '/images/gallery/kav-c8/RuangTamu2.jpeg',
+      '/images/gallery/kav-c8/RuangMakan.jpeg',
+      '/images/gallery/kav-c8/RuangMakanBagianDapur.jpeg',
+      '/images/gallery/kav-c8/TempatSantai1.jpeg',
+      '/images/gallery/kav-c8/TempatSantai2.jpeg',
+      '/images/gallery/kav-c8/KamarMandi1.jpeg',
+      '/images/gallery/kav-c8/DepanKamarMandi.jpeg'
+    ],
+    rooms: [
+      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, Kamar mandi dalam', image: '/images/gallery/kav-c8/KamarTidur1.jpeg' },
+      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-c8/KamarTidur2.jpeg' },
+      { name: 'Kamar Mandi 1', desc: 'Air panas, Shower, Perlengkapan mandi', image: '/images/gallery/kav-c8/KamarMandi1.jpeg' },
+      { name: 'Kamar Mandi 2', desc: 'Shower', image: '/images/gallery/kav-c8/DepanKamarMandi.jpeg' },
+      { name: 'Ruang Keluarga & Dapur', desc: 'Sofa nyaman, TV Pintar, Dapur lengkap', image: '/images/gallery/kav-c8/RuangMakanBagianDapur.jpeg' }
+    ]
   },
   {
     id: 'kav-k1',
@@ -47,7 +69,30 @@ export const villas = [
       pool: 'Private Pool',
       landSize: '200 sqm',
       buildingSize: '160 sqm'
-    }
+    },
+    gallery: [
+      '/images/gallery/kav-k1/TampakDepan.jpeg',
+      '/images/gallery/kav-k1/KolamRenang.jpeg',
+      '/images/gallery/kav-k1/Ruang Tamu.jpeg',
+      '/images/gallery/kav-k1/Dapur.jpeg',
+      '/images/gallery/kav-k1/KamarTidur1.jpeg',
+      '/images/gallery/kav-k1/KamarTidur2.jpeg',
+      '/images/gallery/kav-k1/KamarMandi1.jpeg',
+      '/images/gallery/kav-k1/KamarMandi2.jpeg',
+      '/images/gallery/kav-k1/KolamRenangFoto2.jpeg',
+      '/images/gallery/kav-k1/RuangMakan.jpeg',
+      '/images/gallery/kav-k1/RuangTamuFoto2.jpeg',
+      '/images/gallery/kav-k1/SantaiKaraoke.jpeg',
+      '/images/gallery/kav-k1/SantaiKaraokeFoto2.jpeg',
+      '/images/gallery/kav-k1/TampakSamping.jpeg'
+    ],
+    rooms: [
+      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, Akses kolam renang', image: '/images/gallery/kav-k1/KamarTidur1.jpeg' },
+      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-k1/KamarTidur2.jpeg' },
+      { name: 'Kamar Mandi 1', desc: 'Bathtub, Air panas, Perlengkapan mandi', image: '/images/gallery/kav-k1/KamarMandi1.jpeg' },
+      { name: 'Kamar Mandi 2', desc: 'Shower', image: '/images/gallery/kav-k1/KamarMandi2.jpeg' },
+      { name: 'Ruang Santai', desc: 'Sofa nyaman, TV', image: '/images/gallery/kav-k1/SantaiKaraoke.jpeg' }
+    ]
   },
   {
     id: 'kav-b12',
@@ -72,7 +117,37 @@ export const villas = [
       pool: 'Large Private Pool',
       landSize: '250 sqm',
       buildingSize: '190 sqm'
-    }
+    },
+    gallery: [
+      '/images/gallery/kav-b12/TampakDepan.jpeg',
+      '/images/gallery/kav-b12/KolamRenang1.jpeg',
+      '/images/gallery/kav-b12/RuangTamu1.jpeg',
+      '/images/gallery/kav-b12/Balkon.jpeg',
+      '/images/gallery/kav-b12/KamarTidur1.jpeg',
+      '/images/gallery/kav-b12/Balkon2.jpeg',
+      '/images/gallery/kav-b12/DepanPintu.jpeg',
+      '/images/gallery/kav-b12/HalamanDepan.jpeg',
+      '/images/gallery/kav-b12/KamarMandi1.jpeg',
+      '/images/gallery/kav-b12/KamarMandi2.jpeg',
+      '/images/gallery/kav-b12/KamarMandi3.jpeg',
+      '/images/gallery/kav-b12/KamarMandi4.jpeg',
+      '/images/gallery/kav-b12/KamarTidur2.jpeg',
+      '/images/gallery/kav-b12/KamarTidur3.jpeg',
+      '/images/gallery/kav-b12/RuangMakanDaput.jpeg',
+      '/images/gallery/kav-b12/RuangSantai.jpeg',
+      '/images/gallery/kav-b12/RuangSantai2.jpeg',
+      '/images/gallery/kav-b12/RuangSantai3.jpeg',
+      '/images/gallery/kav-b12/RuangSantai4.jpeg',
+      '/images/gallery/kav-b12/TampakSamping.jpeg',
+      '/images/gallery/kav-b12/TanggaFoto1.jpeg'
+    ],
+    rooms: [
+      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, Bathtub, Pemandangan luar', image: '/images/gallery/kav-b12/KamarTidur1.jpeg' },
+      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur king, Kamar mandi dalam', image: '/images/gallery/kav-b12/KamarTidur2.jpeg' },
+      { name: 'Kamar Tidur 3', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-b12/KamarTidur3.jpeg' },
+      { name: 'Kamar Mandi', desc: 'Air panas, Shower, Perlengkapan premium', image: '/images/gallery/kav-b12/KamarMandi1.jpeg' },
+      { name: 'Ruang Santai', desc: 'Sofa lounge besar, Proyektor, Sound system', image: '/images/gallery/kav-b12/RuangSantai.jpeg' }
+    ]
   },
   {
     id: 'kav-aa3',
@@ -97,7 +172,37 @@ export const villas = [
       pool: 'Infinity Pool',
       landSize: '400 sqm',
       buildingSize: '320 sqm'
-    }
+    },
+    gallery: [
+      '/images/gallery/kav-aa3/TampakDepan.jpeg',
+      '/images/gallery/kav-aa3/KolamRenangFoto1.jpeg',
+      '/images/gallery/kav-aa3/RuangTamu1.jpeg',
+      '/images/gallery/kav-aa3/RuangMakan1.jpeg',
+      '/images/gallery/kav-aa3/KamarTidur1.jpeg',
+      '/images/gallery/kav-aa3/Balkon1.jpeg',
+      '/images/gallery/kav-aa3/Balkon2.jpeg',
+      '/images/gallery/kav-aa3/KamarMandi1.jpeg',
+      '/images/gallery/kav-aa3/KamarMandi2.jpeg',
+      '/images/gallery/kav-aa3/KamarTidur2.jpeg',
+      '/images/gallery/kav-aa3/KamarTidur3.jpeg',
+      '/images/gallery/kav-aa3/KolamRenangFoto2.jpeg',
+      '/images/gallery/kav-aa3/RuangMakan2.jpeg',
+      '/images/gallery/kav-aa3/RuangMakan3.jpeg',
+      '/images/gallery/kav-aa3/RuangMakan4.jpeg',
+      '/images/gallery/kav-aa3/RuangTamu2.jpeg',
+      '/images/gallery/kav-aa3/RuangTamu3.jpeg',
+      '/images/gallery/kav-aa3/RuangTamu4.jpeg',
+      '/images/gallery/kav-aa3/SuasanaKamarTidur1.jpeg',
+      '/images/gallery/kav-aa3/SuasanaKamarTidur3.jpeg',
+      '/images/gallery/kav-aa3/TempatBaju1.jpeg'
+    ],
+    rooms: [
+      { name: 'Master Suite', desc: '1 Tempat tidur super king, Bathtub luas, Walk-in closet', image: '/images/gallery/kav-aa3/KamarTidur1.jpeg' },
+      { name: 'Guest Suite 1 & 2', desc: '1 Tempat tidur king, Kamar mandi dalam', image: '/images/gallery/kav-aa3/KamarTidur2.jpeg' },
+      { name: 'Kamar Anak / Twin', desc: '2 Tempat tidur single', image: '/images/gallery/kav-aa3/KamarTidur3.jpeg' },
+      { name: 'Kamar Mandi', desc: '4 Kamar mandi lengkap, 1 Powder room', image: '/images/gallery/kav-aa3/KamarMandi1.jpeg' },
+      { name: 'Area Santai & Bar', desc: 'Meja biliar, Mini bar, Akses balkon', image: '/images/gallery/kav-aa3/RuangTamu3.jpeg' }
+    ]
   },
   {
     id: 'kav-i7',
@@ -122,6 +227,32 @@ export const villas = [
       pool: 'Luxury Infinity Pool',
       landSize: '600 sqm',
       buildingSize: '500 sqm'
-    }
+    },
+    gallery: [
+      '/images/gallery/kav-i7/TampakDepan.jpeg',
+      '/images/gallery/kav-i7/KolamRenangFoto1.jpeg',
+      '/images/gallery/kav-i7/TerasFoto1.jpeg',
+      '/images/gallery/kav-i7/RuangTamuFoto1.jpeg',
+      '/images/gallery/kav-i7/Lantai3Foto2.jpeg',
+      '/images/gallery/kav-i7/KamarMandi1.jpeg',
+      '/images/gallery/kav-i7/KamarTidur1.jpeg',
+      '/images/gallery/kav-i7/KamarTidur2.jpeg',
+      '/images/gallery/kav-i7/KamarTidur3.jpeg',
+      '/images/gallery/kav-i7/Lantai3Foto1.jpeg',
+      '/images/gallery/kav-i7/Lantai3Foto3.jpeg',
+      '/images/gallery/kav-i7/RuangKeluargaLantai2.jpeg',
+      '/images/gallery/kav-i7/RuangMakanBagianDapur.jpeg',
+      '/images/gallery/kav-i7/RuangTamuSpotFoto.jpeg',
+      '/images/gallery/kav-i7/SpotFoto1.jpeg',
+      '/images/gallery/kav-i7/TanggaFoto1.jpeg',
+      '/images/gallery/kav-i7/TanggaFoto2.jpeg'
+    ],
+    rooms: [
+      { name: 'Grand Master Suite', desc: '1 Tempat tidur king, Ocean view, Jacuzzi pribadi', image: '/images/gallery/kav-i7/KamarTidur1.jpeg' },
+      { name: 'VIP Suite 1 & 2', desc: '1 Tempat tidur king, Teras pribadi, Kamar mandi mewah', image: '/images/gallery/kav-i7/KamarTidur2.jpeg' },
+      { name: 'Kamar Tidur 4 & 5', desc: '1 Tempat tidur queen, Kamar mandi dalam', image: '/images/gallery/kav-i7/KamarTidur3.jpeg' },
+      { name: 'Spa & Gym', desc: 'Ruang sauna, Meja pijat, Peralatan gym lengkap', image: '/images/gallery/kav-i7/Lantai3Foto1.jpeg' },
+      { name: 'Ruang Tamu Utama', desc: 'Langit-langit tinggi, Grand piano, Akses langsung ke Infinity Pool', image: '/images/gallery/kav-i7/RuangTamuFoto1.jpeg' }
+    ]
   }
 ];
