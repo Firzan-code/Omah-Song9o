@@ -45,12 +45,26 @@ export default function Home() {
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.div layout="position" className="hero-text-box">
-            <h1 className="display-lg dyn-title">Welcome to<br />Omah Son9o</h1>
-            <p className="body-lg dyn-desc" style={{ marginTop: '16px', marginBottom: '32px' }}>
-              Pengalaman peristirahatan eksklusif dengan sentuhan arsitektur modern minimalis.
-              Ruang lapang, kenyamanan tanpa batas.
+            <div className="hero-logo-container" style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '24px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px', justifyContent: 'inherit' }}>
+                <img src="/LogoOmahSongoKecil.PNG" alt="Logo Omah Songo" className="dyn-icon" style={{
+                  width: '32px',
+                  height: '32px',
+                  objectFit: 'contain',
+                  display: 'inline-block'
+                }} />
+                <span className="dyn-title" style={{ fontSize: '1.25rem', fontWeight: '700', letterSpacing: '1px' }}>VILLA</span>
+              </div>
+              <h1 className="display-lg dyn-title" style={{ fontSize: '2.5rem', lineHeight: '1' }}>Omah Son9o</h1>
+            </div>
+
+            <p className="body-md dyn-desc" style={{ marginBottom: '32px', lineHeight: '1.6' }}>
+              Pengalaman liburan eksklusif dengan kenyamanan tanpa batas di Omah Son9o.
             </p>
-            <a href="#villas" className="btn dyn-btn">Lihat Koleksi</a>
+
+            <a href="#villas" className="btn dyn-btn" style={{ padding: '16px 32px', borderRadius: '8px', fontWeight: '600', display: 'inline-block' }}>
+              Jelajahi Villa &rarr;
+            </a>
           </motion.div>
         </motion.div>
 
@@ -152,7 +166,7 @@ export default function Home() {
               { icon: Shield, title: 'Keamanan 24/7', desc: 'Sistem keamanan terpadu memastikan privasi dan ketenangan Anda.' },
               { icon: HomeIcon, title: 'Arsitektur Modern', desc: 'Desain minimalis dengan pencahayaan alami yang optimal.' },
               { icon: Key, title: 'Smart Access', desc: 'Akses masuk terintegrasi dengan teknologi terkini.' },
-              { icon: MapPin, title: 'Lokasi Strategis', desc: 'Mudah dijangkau namun tetap menjaga ketenangan eksklusif.' },
+              { icon: MapPin, title: 'Lokasi Strategis', desc: 'Dekat dengan banyak tempat wisata dan pusat oleh-oleh' },
             ].map((item, index) => (
               <motion.div key={index} className="amenity-card" variants={fadeInUp}>
                 <div className="icon-wrapper">

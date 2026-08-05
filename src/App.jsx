@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from 'react
 import Home from './pages/Home';
 import VillaDetail from './pages/VillaDetail';
 import ScrollToTop from './components/ScrollToTop';
+import MusicPlayer from './components/MusicPlayer';
 import './index.css';
 
 function AppContent() {
@@ -23,26 +24,18 @@ function AppContent() {
   return (
     <>
       <ScrollToTop />
+      <MusicPlayer />
       <div className="app-container">
         {/* Navigation */}
         <nav className={`navbar ${navClass}`}>
           <div className="container nav-content">
             <Link to="/" className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-              <span style={{
+              <img src="/LogoOmahSongoKecil.PNG" alt="Omah Son9o Logo" style={{
                 width: '40px',
                 height: '40px',
                 marginRight: '10px',
-                backgroundColor: 'currentColor',
-                WebkitMaskImage: 'url(/logo.svg)',
-                maskImage: 'url(/logo.svg)',
-                WebkitMaskSize: 'contain',
-                maskSize: 'contain',
-                WebkitMaskRepeat: 'no-repeat',
-                maskRepeat: 'no-repeat',
-                WebkitMaskPosition: 'center',
-                maskPosition: 'center',
-                display: 'inline-block'
-              }}></span>
+                objectFit: 'contain'
+              }} />
               Omah Son9o
             </Link>
             <ul className="nav-links">
@@ -65,21 +58,12 @@ function AppContent() {
           <div className="container footer-content">
             <div className="footer-brand">
               <h2 className="logo" style={{ display: 'flex', alignItems: 'center' }}>
-                <span style={{
+                <img src="/LogoOmahSongoKecil.PNG" alt="Omah Son9o Logo" style={{
                   width: '50px',
                   height: '50px',
                   marginRight: '12px',
-                  backgroundColor: 'currentColor',
-                  WebkitMaskImage: 'url(/logo.svg)',
-                  maskImage: 'url(/logo.svg)',
-                  WebkitMaskSize: 'contain',
-                  maskSize: 'contain',
-                  WebkitMaskRepeat: 'no-repeat',
-                  maskRepeat: 'no-repeat',
-                  WebkitMaskPosition: 'center',
-                  maskPosition: 'center',
-                  display: 'inline-block'
-                }}></span>
+                  objectFit: 'contain'
+                }} />
                 Omah Son9o
               </h2>
               <p className="body-md text-secondary">Mendefinisikan ulang kemewahan dan kenyamanan tempat tinggal Anda.</p>
@@ -95,7 +79,7 @@ function AppContent() {
             </div>
             <div className="footer-links">
               <h4 className="title-md">Kontak Kami</h4>
-              <p className="body-md text-secondary">info@omahson9o.com</p>
+              <p className="body-md text-secondary">omahsongo726@gmail.com</p>
               <p className="body-md text-secondary">+62 851 9657 1952</p>
             </div>
             <div className="footer-links">

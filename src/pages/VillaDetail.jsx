@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid } from 'lucide-react';
+import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils } from 'lucide-react';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -9,7 +9,7 @@ import { villas } from '../data/villas';
 
 // Icon Map helper to render Lucide icons by name
 const IconMap = {
-  Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield
+  Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils
 };
 
 const fadeInUp = {
@@ -139,12 +139,24 @@ export default function VillaDetail() {
           {/* Right Column */}
           <div className="detail-col-right">
             <div className="booking-card">
-              <h3 className="title-lg" style={{ marginBottom: '8px' }}>{villa.price}</h3>
-              <p className="body-sm text-secondary" style={{ marginBottom: '24px' }}>Mulai dari per malam</p>
-              <a href="https://wa.me/6285196571952" target="_blank" rel="noreferrer" className="btn btn-primary btn-large btn-whatsapp" style={{ width: '100%' }}>
-                <MessageSquare size={20} style={{ marginRight: '8px' }} />
-                Cek Ketersediaan
-              </a>
+              <div style={{ marginBottom: '16px' }}>
+                <p className="body-sm text-secondary" style={{ marginBottom: '4px' }}>Harga Weekday</p>
+                <h3 className="title-lg">{villa.priceWeekday || villa.price}</h3>
+              </div>
+              <div style={{ marginBottom: '24px' }}>
+                <p className="body-sm text-secondary" style={{ marginBottom: '4px' }}>Harga Weekend</p>
+                <h3 className="title-lg">{villa.priceWeekend || villa.price}</h3>
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <a href="https://wa.me/6285196571952" target="_blank" rel="noreferrer" className="btn btn-primary btn-large btn-whatsapp" style={{ width: '100%' }}>
+                  <MessageSquare size={20} style={{ marginRight: '8px' }} />
+                  Pesan via WhatsApp
+                </a>
+                <a href={villa.airbnbLink || "https://www.airbnb.co.id/rooms/1737574623202584351"} target="_blank" rel="noreferrer" className="btn btn-secondary btn-large" style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '8px' }}><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
+                  Pesan via Airbnb
+                </a>
+              </div>
             </div>
 
             <motion.div variants={fadeInUp} className="detail-section-block" style={{ marginTop: '48px' }}>

@@ -1,18 +1,21 @@
 export const villas = [
   {
     id: 'kav-c8',
-    name: 'KAV C-8',
-    image: '/1.KAV_C8/ganti-dengan-gambar-c8.jpg',
+    name: 'Balinese Breeze Villa KAV C-8',
+    image: '/images/gallery/kav-c8/ViewRuangTamu.jpeg',
     desc: 'Villa pilihan cerdas dengan desain esensial dan kenyamanan optimal untuk keluarga kecil.',
-    price: 'Rp 2.500.000 / Night',
+    priceWeekday: 'Rp 450.000 / Night',
+    priceWeekend: 'Rp 700.000 / Night',
+    airbnbLink: 'https://www.airbnb.co.id/rooms/1743958369046072478?source_impression_id=p3_1785933086_P3rRyod_eIqmL6UG', // <-- Ganti link Airbnb untuk KAV C-8 di sini
     architecturalNotes: 'A masterclass in smart space utilization. KAV C-8 integrates essential living spaces with open-air voids, allowing the sea breeze to circulate freely. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
     facilities: [
-      { icon: 'Droplets', label: 'Private Pool' },
-      { icon: 'ChefHat', label: 'Chef\'s Kitchen' },
-      { icon: 'Wifi', label: 'High Speed Wifi' },
-      { icon: 'Car', label: 'Private Parking' },
-      { icon: 'Shield', label: '24/7 Security' },
-      { icon: 'Wind', label: 'AC & Climate Control' }
+      { icon: 'Home', label: '1 Lantai Tipe Mezzanine' },
+      { icon: 'BedDouble', label: '2 Kamar Tidur' },
+      { icon: 'Bath', label: '1 Kamar Mandi' },
+      { icon: 'Droplets', label: 'Private Jacuzzi' },
+      { icon: 'Mic', label: 'Karaoke' },
+      { icon: 'ChefHat', label: 'Dapur & Peralatan Masak' },
+      { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
     priceLevel: 1,
@@ -49,9 +52,11 @@ export const villas = [
   {
     id: 'kav-k1',
     name: 'KAV K-1',
-    image: '/2.KAV_K-1/TampakDepan.jpeg',
+    image: '/images/gallery/kav-k1/TampakDepan.jpeg',
     desc: 'Keseimbangan sempurna antara ruang terbuka dan area privasi dengan pencahayaan alami.',
-    price: 'Rp 3.200.000 / Night',
+    priceWeekday: 'Rp 800.000 / Night',
+    priceWeekend: 'Rp 1.000.000 / Night',
+    airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV K-1 di sini
     architecturalNotes: 'A masterclass in tropical brutalism. KAV K-1 integrates raw concrete textures with open air voids, allowing the sea breeze to circulate through its monolithic structure. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
     facilities: [
       { icon: 'Droplets', label: 'Infinity Pool' },
@@ -87,8 +92,8 @@ export const villas = [
       '/images/gallery/kav-k1/TampakSamping.jpeg'
     ],
     rooms: [
-      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, Akses kolam renang', image: '/images/gallery/kav-k1/KamarTidur1.jpeg' },
-      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-k1/KamarTidur2.jpeg' },
+      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, Akses kolam renang', image: '/images/gallery/kav-k1/KamarTidur2.jpeg' },
+      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-k1/KamarTidur1.jpeg' },
       { name: 'Kamar Mandi 1', desc: 'Bathtub, Air panas, Perlengkapan mandi', image: '/images/gallery/kav-k1/KamarMandi1.jpeg' },
       { name: 'Kamar Mandi 2', desc: 'Shower', image: '/images/gallery/kav-k1/KamarMandi2.jpeg' },
       { name: 'Ruang Santai', desc: 'Sofa nyaman, TV', image: '/images/gallery/kav-k1/SantaiKaraoke.jpeg' }
@@ -96,18 +101,24 @@ export const villas = [
   },
   {
     id: 'kav-b12',
-    name: 'KAV B12',
-    image: '/3.KAV_B12/TampakDepan.jpeg',
+    name: 'Remior Villa KAV B-12',
+    image: '/images/gallery/kav-b12/TampakDepan.jpeg',
     desc: 'Ruang yang lebih luas dengan penataan layout modern, ideal untuk menghabiskan waktu bersama.',
-    price: 'Rp 4.500.000 / Night',
+    priceWeekday: 'Rp 850.000 / Night',
+    priceWeekend: 'Rp 1.000.000 / Night',
+    airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351?source_impression_id=p3_1785933086_P354iVGLOyJ2VqrX', // <-- Ganti link Airbnb untuk KAV B12 di sini
     architecturalNotes: 'Designed for social harmony. KAV B12 expands on the tropical brutalist aesthetic with wider communal areas and seamless indoor-outdoor transitions, perfect for family gatherings or entertaining guests in absolute privacy.',
     facilities: [
-      { icon: 'Droplets', label: 'Large Private Pool' },
-      { icon: 'ChefHat', label: 'Gourmet Kitchen' },
-      { icon: 'Wifi', label: 'High Speed Wifi' },
-      { icon: 'Tv', label: 'Home Cinema' },
-      { icon: 'Car', label: 'Spacious Parking' },
-      { icon: 'Headset', label: '24/7 Concierge' }
+      { icon: 'BedDouble', label: '4 Kamar Tidur' },
+      { icon: 'Bath', label: '3 Kamar Mandi' },
+      { icon: 'Droplets', label: 'Kolam Renang' },
+      { icon: 'Mic', label: 'Karaoke' },
+      { icon: 'Wifi', label: 'Wifi' },
+      { icon: 'ChefHat', label: 'Alat masak lengkap' },
+      { icon: 'Car', label: 'Area Parkir Luas' },
+      { icon: 'Tv', label: 'Netflik' },
+      { icon: 'Mountain', label: 'View Pegunungan' },
+      { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
     priceLevel: 3,
@@ -152,17 +163,24 @@ export const villas = [
   {
     id: 'kav-aa3',
     name: 'KAV Aa-3',
-    image: '/4.KAV_Aa-3/TampakDepan.jpeg',
+    image: '/images/gallery/kav-aa3/TampakDepan.jpeg',
     desc: 'Eksklusivitas premium dengan fasilitas lengkap dan desain interior yang menawan.',
-    price: 'Rp 6.000.000 / Night',
+    priceWeekday: 'Rp 850.000 / Night',
+    priceWeekend: 'Rp 1.000.000 / Night',
+    airbnbLink: 'https://www.airbnb.co.id/rooms/1743911423548557238?source_impression_id=p3_1785933086_P3VIlHroQtIjSITl', // <-- Ganti link Airbnb untuk KAV Aa-3 di sini
     architecturalNotes: 'The epitome of refined elegance. KAV Aa-3 elevates the living experience with premium materials and custom furnishings. The architecture emphasizes verticality and expansive sightlines across the Uluwatu landscape.',
     facilities: [
-      { icon: 'Droplets', label: 'Infinity Pool' },
-      { icon: 'ChefHat', label: 'Pro Chef Kitchen' },
-      { icon: 'Wifi', label: 'High Speed Wifi' },
-      { icon: 'Wind', label: 'Central AC' },
-      { icon: 'Car', label: 'Multi-Car Garage' },
-      { icon: 'Headset', label: '24/7 Butler Service' }
+      { icon: 'BedDouble', label: '3 Kamar Tidur' },
+      { icon: 'Bath', label: '3 Kamar Mandi + Water Heater' },
+      { icon: 'Wind', label: 'AC di setiap kamar' },
+      { icon: 'Tv', label: 'Smart TV (Netflik)' },
+      { icon: 'Droplets', label: 'Private Pool' },
+      { icon: 'Mic', label: 'Karaoke' },
+      { icon: 'Sofa', label: 'Ruang Tamu & Ruang Keluarga' },
+      { icon: 'LayoutGrid', label: 'Balkon' },
+      { icon: 'ChefHat', label: 'Dapur lengkap (kompor, oven & kulkas)' },
+      { icon: 'Utensils', label: 'Free mie & kopi' },
+      { icon: 'Coffee', label: 'Welcome Drink' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
     priceLevel: 4,
@@ -207,9 +225,11 @@ export const villas = [
   {
     id: 'kav-i7',
     name: 'KAV I-7',
-    image: '/5.KAV_I-7/TampakDepan.jpeg',
+    image: '/images/gallery/kav-i7/TampakDepan.jpeg',
     desc: 'Karya arsitektur termegah kami. Pengalaman menginap paling mewah dan tak terlupakan.',
-    price: 'Rp 8.500.000 / Night',
+    priceWeekday: 'Rp 8.500.000 / Night',
+    priceWeekend: 'Rp 9.500.000 / Night',
+    airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV I-7 di sini
     architecturalNotes: 'Our crown jewel. KAV I-7 is a monumental achievement in tropical modernism. Boasting unparalleled scale, this sanctuary features multiple pavilions, water features, and the highest vantage point for breathtaking ocean sunsets.',
     facilities: [
       { icon: 'Droplets', label: 'Luxury Infinity Pool' },
