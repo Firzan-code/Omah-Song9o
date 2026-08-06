@@ -1062,8 +1062,6 @@ a {
   padding: 32px;
   border-radius: 12px;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 120px;
   background-color: var(--clr-background);
 }
 

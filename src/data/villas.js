@@ -165,7 +165,7 @@ export const villas = [
   },
   {
     id: 'kav-aa3',
-    name: 'Sora House KAV Aa-3',
+    name: 'Sora House Villa KAV Aa-3',
     image: '/images/gallery/kav-aa3/TampakDepan.jpeg',
     desc: 'Eksklusivitas premium dengan fasilitas lengkap dan desain interior yang menawan.',
     priceWeekday: 'Rp 850.000 / Night',
@@ -231,8 +231,8 @@ export const villas = [
     name: 'Aurora Sky KAV I-7',
     image: '/images/gallery/kav-i7/TampakDepan.jpeg',
     desc: 'Karya arsitektur termegah kami. Pengalaman menginap paling mewah dan tak terlupakan.',
-    priceWeekday: 'Rp 8.500.000 / Night',
-    priceWeekend: 'Rp 9.500.000 / Night',
+    priceWeekday: 'Rp 850.000 / Night',
+    priceWeekend: 'Rp 1.000.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV I-7 di sini
     architecturalNotes: 'Our crown jewel. KAV I-7 is a monumental achievement in tropical modernism. Boasting unparalleled scale, this sanctuary features multiple pavilions, water features, and the highest vantage point for breathtaking ocean sunsets.',
     facilities: [
