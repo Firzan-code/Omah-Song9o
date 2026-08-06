@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
-import { Shield, Home as HomeIcon, Key, MapPin, MessageSquare, CheckCircle } from 'lucide-react';
+import { Shield, Home as HomeIcon, Key, MapPin, MessageSquare, CheckCircle, Headset } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { villas } from '../data/villas';
 
@@ -165,7 +165,7 @@ export default function Home() {
             {[
               { icon: Shield, title: 'Keamanan 24/7', desc: 'Sistem keamanan terpadu memastikan privasi dan ketenangan Anda.' },
               { icon: HomeIcon, title: 'Arsitektur Modern', desc: 'Desain minimalis dengan pencahayaan alami yang optimal.' },
-              { icon: Key, title: 'Smart Access', desc: 'Akses masuk terintegrasi dengan teknologi terkini.' },
+              { icon: Headset, title: 'Pelayanan Cepat', desc: 'Pengelola kami selalu siap sedia memberikan respons instan dan layanan terbaik untuk memastikan kenyamanan Anda selama menginap.' },
               { icon: MapPin, title: 'Lokasi Strategis', desc: 'Dekat dengan banyak tempat wisata dan pusat oleh-oleh' },
             ].map((item, index) => (
               <motion.div key={index} className="amenity-card" variants={fadeInUp}>

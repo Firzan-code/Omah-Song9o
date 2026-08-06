@@ -93,7 +93,7 @@ function AppContent() {
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7v3a4 4 0 0 0 0 8 4 4 0 0 0 4-4v-5z" /></svg>
                   TikTok
                 </a>
-                <a href="https://www.airbnb.co.id/rooms/1737574623202584351?unique_share_id=a5f1a6f5-d956-4690-b2b2-6d1238b9304d&viralityEntryPoint=1&s=76" target="_blank" rel="noopener noreferrer" className="social-card" aria-label="Airbnb">
+                <a href="https://www.airbnb.co.id/users/profile/1737574623816365548?previous_page_name=PdpHomeMarketplac" target="_blank" rel="noopener noreferrer" className="social-card" aria-label="Airbnb">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
                   Airbnb
                 </a>

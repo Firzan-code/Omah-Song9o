@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils } from 'lucide-react';
+import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Users } from 'lucide-react';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -71,7 +71,13 @@ export default function VillaDetail() {
           variants={fadeInUp}
         >
           <h1 className="display-lg">{villa.name}</h1>
-          <p className="body-md text-secondary" style={{ marginBottom: '24px' }}>{villa.location}</p>
+          <p className="body-md text-secondary" style={{ marginBottom: '8px' }}>{villa.location}</p>
+          {villa.capacity && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--clr-text-main)', marginBottom: '24px' }}>
+              <Users size={20} color="var(--clr-primary)" />
+              <span className="body-md" style={{ fontWeight: '600' }}>Kapasitas: {villa.capacity}</span>
+            </div>
+          )}
         </motion.div>
 
         {/* Gallery Grid (Airbnb Style) */}
@@ -147,6 +153,13 @@ export default function VillaDetail() {
                 <p className="body-sm text-secondary" style={{ marginBottom: '4px' }}>Harga Weekend</p>
                 <h3 className="title-lg">{villa.priceWeekend || villa.price}</h3>
               </div>
+
+              <div className="promo-banner" style={{ marginBottom: '24px', alignItems: 'center', textAlign: 'center' }}>
+                <div className="promo-text" style={{ fontSize: '1.2rem' }}>
+                  Free tiket wisata (S&K) 🎢
+                </div>
+              </div>
+
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <a href="https://wa.me/6285196571952" target="_blank" rel="noreferrer" className="btn btn-primary btn-large btn-whatsapp" style={{ width: '100%' }}>
                   <MessageSquare size={20} style={{ marginRight: '8px' }} />

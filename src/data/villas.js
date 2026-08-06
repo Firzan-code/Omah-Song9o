@@ -18,6 +18,7 @@ export const villas = [
       { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    capacity: '5 - 7 Orang',
     priceLevel: 1,
     specs: {
       bedrooms: 2,
@@ -51,7 +52,7 @@ export const villas = [
   },
   {
     id: 'kav-k1',
-    name: 'KAV K-1',
+    name: 'Maharani Villa KAV K-1',
     image: '/images/gallery/kav-k1/TampakDepan.jpeg',
     desc: 'Keseimbangan sempurna antara ruang terbuka dan area privasi dengan pencahayaan alami.',
     priceWeekday: 'Rp 800.000 / Night',
@@ -67,6 +68,7 @@ export const villas = [
       { icon: 'Headset', label: '24/7 Concierge' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    capacity: '6 - 8 Orang',
     priceLevel: 2,
     specs: {
       bedrooms: 3,
@@ -121,6 +123,7 @@ export const villas = [
       { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    capacity: '8 - 10 Orang',
     priceLevel: 3,
     specs: {
       bedrooms: 3,
@@ -162,7 +165,7 @@ export const villas = [
   },
   {
     id: 'kav-aa3',
-    name: 'KAV Aa-3',
+    name: 'Sora House KAV Aa-3',
     image: '/images/gallery/kav-aa3/TampakDepan.jpeg',
     desc: 'Eksklusivitas premium dengan fasilitas lengkap dan desain interior yang menawan.',
     priceWeekday: 'Rp 850.000 / Night',
@@ -183,6 +186,7 @@ export const villas = [
       { icon: 'Coffee', label: 'Welcome Drink' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    capacity: '7 - 9 Orang',
     priceLevel: 4,
     specs: {
       bedrooms: 4,
@@ -224,7 +228,7 @@ export const villas = [
   },
   {
     id: 'kav-i7',
-    name: 'KAV I-7',
+    name: 'Aurora Sky KAV I-7',
     image: '/images/gallery/kav-i7/TampakDepan.jpeg',
     desc: 'Karya arsitektur termegah kami. Pengalaman menginap paling mewah dan tak terlupakan.',
     priceWeekday: 'Rp 8.500.000 / Night',
@@ -240,6 +244,7 @@ export const villas = [
       { icon: 'Headset', label: '24/7 Elite Concierge' }
     ],
     location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    capacity: '7 - 9 Orang',
     priceLevel: 5,
     specs: {
       bedrooms: 5,
