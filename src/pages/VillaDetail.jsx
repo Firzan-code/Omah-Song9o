@@ -156,7 +156,7 @@ export default function VillaDetail() {
 
               <div className="promo-banner" style={{ marginBottom: '24px', alignItems: 'center', textAlign: 'center' }}>
                 <div className="promo-text" style={{ fontSize: '1.2rem' }}>
-                  Free tiket wisata (S&K) 🎢
+                  Free tiket wisata (S&K)
                 </div>
               </div>
 
