@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Users } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Users, X } from 'lucide-react';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -30,6 +30,7 @@ export default function VillaDetail() {
   const villa = villas.find(v => v.id === id);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
+  const [isPromoOpen, setIsPromoOpen] = useState(false);
 
   // Scroll to top on mount
   useEffect(() => {
@@ -154,8 +155,12 @@ export default function VillaDetail() {
                 <h3 className="title-lg">{villa.priceWeekend || villa.price}</h3>
               </div>
 
-              <div className="promo-banner" style={{ marginBottom: '24px', alignItems: 'center', textAlign: 'center' }}>
-                <div className="promo-text" style={{ fontSize: '1.2rem' }}>
+              <div 
+                className="promo-banner" 
+                style={{ marginBottom: '24px', alignItems: 'center', textAlign: 'center', cursor: 'pointer' }}
+                onClick={() => setIsPromoOpen(true)}
+              >
+                <div className="promo-text" style={{ fontSize: '1.2rem', textDecoration: 'underline' }}>
                   Free tiket wisata (S&K)
                 </div>
               </div>
@@ -219,6 +224,33 @@ export default function VillaDetail() {
         )}
 
       </div>
+
+      {/* Promo Modal */}
+      <AnimatePresence>
+        {isPromoOpen && (
+          <div className="modal-overlay" onClick={() => setIsPromoOpen(false)} style={{ zIndex: 9999 }}>
+            <motion.div 
+              className="modal-content"
+              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+            >
+              <button className="modal-close" onClick={() => setIsPromoOpen(false)}>
+                <X size={24} />
+              </button>
+              <h3 className="title-lg" style={{ marginBottom: '16px' }}>Syarat & Ketentuan Tiket Wisata</h3>
+              <ul className="body-md" style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--clr-text-secondary)' }}>
+                <li>Tiket wisata gratis diberikan untuk minimal menginap 2 malam (Weekend) atau 3 malam (Weekday).</li>
+                <li>Berlaku untuk pilihan tempat wisata tertentu di area Kota Batu.</li>
+                <li>Satu tiket berlaku untuk satu tamu yang terdaftar, maksimal sesuai kapasitas standar villa.</li>
+                <li>Promo tidak dapat diuangkan atau digabung dengan promo lainnya.</li>
+                <li>Harap konfirmasi klaim tiket wisata maksimal H-1 sebelum check-in melalui WhatsApp.</li>
+              </ul>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
 
       {/* Lightbox Component */}
       <Lightbox
