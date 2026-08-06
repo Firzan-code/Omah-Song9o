@@ -7,7 +7,7 @@ export const villas = [
     priceWeekday: 'Rp 450.000 / Night',
     priceWeekend: 'Rp 700.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1743958369046072478?source_impression_id=p3_1785933086_P3rRyod_eIqmL6UG', // <-- Ganti link Airbnb untuk KAV C-8 di sini
-    architecturalNotes: 'A masterclass in smart space utilization. KAV C-8 integrates essential living spaces with open-air voids, allowing the sea breeze to circulate freely. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
+    architecturalNotes: 'Sebuah mahakarya dalam pemanfaatan ruang yang cerdas. KAV C-8 memadukan ruang hidup esensial dengan area terbuka, membiarkan sejuknya angin berhembus bebas. Unit ini menawarkan kemewahan yang menenangkan, berfokus pada permainan cahaya, bayangan, dan keindahan tata ruang.',
     facilities: [
       { icon: 'Home', label: '1 Lantai Tipe Mezzanine' },
       { icon: 'BedDouble', label: '2 Kamar Tidur' },
@@ -58,7 +58,7 @@ export const villas = [
     priceWeekday: 'Rp 650.000 / Night',
     priceWeekend: 'Rp 900.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV K-1 di sini
-    architecturalNotes: 'A masterclass in tropical brutalism. KAV K-1 integrates raw concrete textures with open air voids, allowing the sea breeze to circulate through its monolithic structure. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
+    architecturalNotes: 'Sebuah mahakarya dalam gaya brutalisme tropis. KAV K-1 memadukan tekstur beton mentah dengan area terbuka, membiarkan sejuknya angin berhembus bebas melalui struktur monolitiknya. Unit ini menawarkan kemewahan yang menenangkan, berfokus pada permainan cahaya, bayangan, dan keindahan tata ruang.',
     facilities: [
       { icon: 'Droplets', label: 'Infinity Pool' },
       { icon: 'ChefHat', label: 'Chef\'s Kitchen' },
@@ -109,7 +109,7 @@ export const villas = [
     priceWeekday: 'Rp 850.000 / Night',
     priceWeekend: 'Rp 1.000.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351?source_impression_id=p3_1785933086_P354iVGLOyJ2VqrX', // <-- Ganti link Airbnb untuk KAV B12 di sini
-    architecturalNotes: 'Designed for social harmony. KAV B12 expands on the tropical brutalist aesthetic with wider communal areas and seamless indoor-outdoor transitions, perfect for family gatherings or entertaining guests in absolute privacy.',
+    architecturalNotes: 'Dirancang untuk kebersamaan. KAV B12 memperluas estetika brutalisme tropis dengan area komunal yang lebih luas dan transisi yang mulus antara dalam dan luar ruangan, sangat cocok untuk acara kumpul keluarga atau menjamu tamu dalam privasi yang maksimal.',
     facilities: [
       { icon: 'BedDouble', label: '4 Kamar Tidur' },
       { icon: 'Bath', label: '3 Kamar Mandi' },
@@ -171,7 +171,7 @@ export const villas = [
     priceWeekday: 'Rp 850.000 / Night',
     priceWeekend: 'Rp 1.000.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1743911423548557238?source_impression_id=p3_1785933086_P3VIlHroQtIjSITl', // <-- Ganti link Airbnb untuk KAV Aa-3 di sini
-    architecturalNotes: 'The epitome of refined elegance. KAV Aa-3 elevates the living experience with premium materials and custom furnishings. The architecture emphasizes verticality and expansive sightlines across the Uluwatu landscape.',
+    architecturalNotes: 'Villa dengan konsep Japandi yang memadukan desain minimalis, modern, dan suasana hangat untuk membuat setiap momen liburan terasa lebih nyaman',
     facilities: [
       { icon: 'BedDouble', label: '3 Kamar Tidur' },
       { icon: 'Bath', label: '3 Kamar Mandi + Water Heater' },
@@ -234,7 +234,7 @@ export const villas = [
     priceWeekday: 'Rp 850.000 / Night',
     priceWeekend: 'Rp 1.000.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV I-7 di sini
-    architecturalNotes: 'Our crown jewel. KAV I-7 is a monumental achievement in tropical modernism. Boasting unparalleled scale, this sanctuary features multiple pavilions, water features, and the highest vantage point for breathtaking ocean sunsets.',
+    architecturalNotes: 'Unit mahkota kami. KAV I-7 adalah sebuah pencapaian monumental dalam gaya modernisme tropis. Menawarkan kemegahan yang tak tertandingi, hunian ini dilengkapi dengan beberapa paviliun, elemen air, dan titik pandang tertinggi untuk menikmati indahnya pemandangan alam pegunungan dan matahari terbenam.',
     facilities: [
       { icon: 'Droplets', label: 'Luxury Infinity Pool' },
       { icon: 'ChefHat', label: 'Commercial Kitchen' },
