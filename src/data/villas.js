@@ -17,7 +17,7 @@ export const villas = [
       { icon: 'ChefHat', label: 'Dapur & Peralatan Masak' },
       { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
-    location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    location: 'Kayana Regency, Kota Batu',
     capacity: '5 - 7 Orang',
     priceLevel: 1,
     specs: {
@@ -55,8 +55,8 @@ export const villas = [
     name: 'Maharani Villa KAV K-1',
     image: '/images/gallery/kav-k1/TampakDepan.jpeg',
     desc: 'Keseimbangan sempurna antara ruang terbuka dan area privasi dengan pencahayaan alami.',
-    priceWeekday: 'Rp 800.000 / Night',
-    priceWeekend: 'Rp 1.000.000 / Night',
+    priceWeekday: 'Rp 650.000 / Night',
+    priceWeekend: 'Rp 900.000 / Night',
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV K-1 di sini
     architecturalNotes: 'A masterclass in tropical brutalism. KAV K-1 integrates raw concrete textures with open air voids, allowing the sea breeze to circulate through its monolithic structure. This unit offers an introspective luxury, focusing on shadows, light play, and spatial purity.',
     facilities: [
@@ -67,7 +67,7 @@ export const villas = [
       { icon: 'Car', label: 'Dual Parking' },
       { icon: 'Headset', label: '24/7 Concierge' }
     ],
-    location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    location: 'Kayana Regency, Kota Batu.',
     capacity: '6 - 8 Orang',
     priceLevel: 2,
     specs: {
@@ -122,7 +122,7 @@ export const villas = [
       { icon: 'Mountain', label: 'View Pegunungan' },
       { icon: 'Coffee', label: 'Bonus: Welcome Drink!' }
     ],
-    location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    location: 'Kayana Regency, Kota Batu',
     capacity: '8 - 10 Orang',
     priceLevel: 3,
     specs: {
@@ -185,7 +185,7 @@ export const villas = [
       { icon: 'Utensils', label: 'Free mie & kopi' },
       { icon: 'Coffee', label: 'Welcome Drink' }
     ],
-    location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    location: 'Kayana Regency, Kota Batu',
     capacity: '7 - 9 Orang',
     priceLevel: 4,
     specs: {
@@ -228,7 +228,7 @@ export const villas = [
   },
   {
     id: 'kav-i7',
-    name: 'Aurora Sky KAV I-7',
+    name: 'Aurora Sky Villa KAV I-7',
     image: '/images/gallery/kav-i7/TampakDepan.jpeg',
     desc: 'Karya arsitektur termegah kami. Pengalaman menginap paling mewah dan tak terlupakan.',
     priceWeekday: 'Rp 850.000 / Night',
@@ -243,7 +243,7 @@ export const villas = [
       { icon: 'Car', label: 'Underground Parking' },
       { icon: 'Headset', label: '24/7 Elite Concierge' }
     ],
-    location: 'Uluwatu, Bali. 5 mins to Bingin Beach.',
+    location: 'Kayana Regency, Kota Batu',
     capacity: '7 - 9 Orang',
     priceLevel: 5,
     specs: {
