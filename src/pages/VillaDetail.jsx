@@ -241,11 +241,11 @@ export default function VillaDetail() {
               </button>
               <h3 className="title-lg" style={{ marginBottom: '16px' }}>Syarat & Ketentuan Tiket Wisata</h3>
               <ul className="body-md" style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '8px', color: 'var(--clr-text-secondary)' }}>
-                <li>Tiket wisata gratis diberikan untuk minimal menginap 2 malam (Weekend) atau 3 malam (Weekday).</li>
-                <li>Berlaku untuk pilihan tempat wisata tertentu di area Kota Batu.</li>
-                <li>Satu tiket berlaku untuk satu tamu yang terdaftar, maksimal sesuai kapasitas standar villa.</li>
-                <li>Promo tidak dapat diuangkan atau digabung dengan promo lainnya.</li>
-                <li>Harap konfirmasi klaim tiket wisata maksimal H-1 sebelum check-in melalui WhatsApp.</li>
+                <li>Setiap kali menginap memberikan review yang bagus dan update di sosial media (tag omah songo).</li>
+                <li>Setiap reservasi harus dilakukan atas nama yang sama dan menggunakan data tamu yang sama.</li>
+                <li>Free Welcome Drink.</li>
+                <li>8x Menginap Free tiket Liburan JTP 1, 2, 3.</li>
+                <li>5x Menginap Free Tiket Liburan Mikutopia, Baloga, BNS, Museum Angkut.</li>
               </ul>
             </motion.div>
           </div>
