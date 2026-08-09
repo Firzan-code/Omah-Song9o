@@ -236,20 +236,23 @@ export const villas = [
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV I-7 di sini
     architecturalNotes: 'Unit mahkota kami. KAV I-7 adalah sebuah pencapaian monumental dalam gaya modernisme tropis. Menawarkan kemegahan yang tak tertandingi, hunian ini dilengkapi dengan beberapa paviliun, elemen air, dan titik pandang tertinggi untuk menikmati indahnya pemandangan alam pegunungan dan matahari terbenam.',
     facilities: [
-      { icon: 'Droplets', label: 'Luxury Infinity Pool' },
-      { icon: 'ChefHat', label: 'Commercial Kitchen' },
-      { icon: 'Dumbbell', label: 'Private Gym & Spa' },
-      { icon: 'Tv', label: 'Private Cinema' },
-      { icon: 'Car', label: 'Underground Parking' },
-      { icon: 'Headset', label: '24/7 Elite Concierge' }
+      { icon: 'BedDouble', label: '3 Kamar Tidur' },
+      { icon: 'Bath', label: '2 Kamar Mandi' },
+      { icon: 'Droplets', label: 'Private Swimming Pool' },
+      { icon: 'Mountain', label: 'Rooftop (View Pegunungan)' },
+      { icon: 'Camera', label: 'Spot Foto Instagramable' },
+      { icon: 'ChefHat', label: 'Peralatan Masak Lengkap' },
+      { icon: 'Sofa', label: 'Ruang Tamu & Ruang Keluarga' },
+      { icon: 'Car', label: 'Area Parkir Luas' },
+      { icon: 'Coffee', label: 'Bonus : Welcome Drink!' }
     ],
     location: 'Kayana Regency, Kota Batu',
     capacity: '7 - 9 Orang',
     priceLevel: 5,
     specs: {
-      bedrooms: 5,
-      bathrooms: 5,
-      pool: 'Luxury Infinity Pool',
+      bedrooms: 3,
+      bathrooms: 2,
+      pool: 'Private Pool',
       landSize: '600 sqm',
       buildingSize: '500 sqm'
     },
@@ -273,11 +276,11 @@ export const villas = [
       '/images/gallery/kav-i7/TanggaFoto2.jpeg'
     ],
     rooms: [
-      { name: 'Grand Master Suite', desc: '1 Tempat tidur king, Ocean view, Jacuzzi pribadi', image: '/images/gallery/kav-i7/KamarTidur1.jpeg' },
-      { name: 'VIP Suite 1 & 2', desc: '1 Tempat tidur king, Teras pribadi, Kamar mandi mewah', image: '/images/gallery/kav-i7/KamarTidur2.jpeg' },
-      { name: 'Kamar Tidur 4 & 5', desc: '1 Tempat tidur queen, Kamar mandi dalam', image: '/images/gallery/kav-i7/KamarTidur3.jpeg' },
-      { name: 'Spa & Gym', desc: 'Ruang sauna, Meja pijat, Peralatan gym lengkap', image: '/images/gallery/kav-i7/Lantai3Foto1.jpeg' },
-      { name: 'Ruang Tamu Utama', desc: 'Langit-langit tinggi, Grand piano, Akses langsung ke Infinity Pool', image: '/images/gallery/kav-i7/RuangTamuFoto1.jpeg' }
+      { name: 'Kamar Tidur Utama', desc: '1 Tempat tidur king, dengan pemandangan', image: '/images/gallery/kav-i7/KamarTidur1.jpeg' },
+      { name: 'Kamar Tidur 2', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-i7/KamarTidur2.jpeg' },
+      { name: 'Kamar Tidur 3', desc: '1 Tempat tidur queen', image: '/images/gallery/kav-i7/KamarTidur3.jpeg' },
+      { name: 'Kamar Mandi', desc: '2 Kamar Mandi lengkap', image: '/images/gallery/kav-i7/KamarMandi1.jpeg' },
+      { name: 'Ruang Tamu & Keluarga', desc: 'Area bersantai yang nyaman', image: '/images/gallery/kav-i7/RuangKeluargaLantai2.jpeg' }
     ]
   }
 ];
