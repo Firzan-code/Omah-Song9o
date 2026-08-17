@@ -22,6 +22,13 @@ const staggerContainer = {
 export default function Home() {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+  const heroVideos = ['video-depan.mp4', 'video2.mp4', 'video3.mp4'];
+
+  const handleVideoEnd = () => {
+    setCurrentVideoIndex((prev) => (prev + 1) % heroVideos.length);
+  };
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled((prev) => {
@@ -73,15 +80,15 @@ export default function Home() {
           layout
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          {/* Ganti 'YOUR_VIDEO_URL.mp4' dengan path video Anda, misalnya '/assets/video.mp4' */}
           <video
+            key={heroVideos[currentVideoIndex]}
             autoPlay
-            loop
             muted
             playsInline
+            onEnded={handleVideoEnd}
             className="hero-video"
           >
-            <source src="video-depan.mp4" type="video/mp4" />
+            <source src={heroVideos[currentVideoIndex]} type="video/mp4" />
             Browser Anda tidak mendukung video tag.
           </video>
         </motion.div>

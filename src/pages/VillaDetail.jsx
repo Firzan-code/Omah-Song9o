@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Users, X, Camera } from 'lucide-react';
+import { ArrowLeft, Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, MessageSquare, LayoutGrid, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Users, X, Camera, Compass } from 'lucide-react';
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
@@ -9,7 +9,7 @@ import { villas } from '../data/villas';
 
 // Icon Map helper to render Lucide icons by name
 const IconMap = {
-  Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Camera
+  Droplets, ChefHat, Wifi, Dumbbell, Car, Headset, Tv, Wind, Shield, Home, BedDouble, Bath, Mic, Coffee, Mountain, Sofa, Utensils, Camera, Compass
 };
 
 const fadeInUp = {

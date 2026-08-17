@@ -60,12 +60,16 @@ export const villas = [
     airbnbLink: 'https://www.airbnb.co.id/rooms/1737574623202584351', // <-- Ganti link Airbnb untuk KAV K-1 di sini
     architecturalNotes: 'Sebuah mahakarya dalam gaya brutalisme tropis. KAV K-1 memadukan tekstur beton mentah dengan area terbuka, membiarkan sejuknya angin berhembus bebas melalui struktur monolitiknya. Unit ini menawarkan kemewahan yang menenangkan, berfokus pada permainan cahaya, bayangan, dan keindahan tata ruang.',
     facilities: [
-      { icon: 'Droplets', label: 'Infinity Pool' },
-      { icon: 'ChefHat', label: 'Chef\'s Kitchen' },
-      { icon: 'Wifi', label: 'High Speed Wifi' },
-      { icon: 'Dumbbell', label: 'Private Gym' },
-      { icon: 'Car', label: 'Dual Parking' },
-      { icon: 'Headset', label: '24/7 Concierge' }
+      { icon: 'BedDouble', label: '3 Kamar Tidur' },
+      { icon: 'Bath', label: '3 Kamar Mandi' },
+      { icon: 'Droplets', label: 'Private Pool' },
+      { icon: 'Mic', label: 'Karaoke' },
+      { icon: 'ChefHat', label: 'Dapur Lengkap & Peralatan Masak' },
+      { icon: 'Compass', label: 'Perlengkapan Salat' },
+      { icon: 'Tv', label: 'Smart TV + Karoke' },
+      { icon: 'Wifi', label: 'WiFi' },
+      { icon: 'Car', label: 'Area Parkir Luas' },
+      { icon: 'Coffee', label: 'Bonus : Welcome Drink!🍻' }
     ],
     location: 'Kayana Regency, Kota Batu.',
     capacity: '6 - 8 Orang',
